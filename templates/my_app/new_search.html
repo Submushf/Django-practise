@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <form action="{% url 'New_Search' %}" method="post">
+        <input type="text" name="Search" placeholder="search"> 
+    </form>
 
 {% endblock content %}
