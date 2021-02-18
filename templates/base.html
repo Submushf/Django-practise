@@ -45,12 +45,13 @@
             <!-- Promo Content 3 goes here -->
             <div class="center">
                 <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
-                <p>A much sexier front-end to Craigslist</p>
+                <p>A much better front-end to Craigslist</p>
                 <p class="light center">We built this with ❤️</p>
             </div>
         </div>
     </div>
 
+<div class="container">
     <form action="{% url 'New_Search' %}" method="post">
         {% csrf_token %}
         <input type="text" name="search" placeholder="search">
@@ -58,7 +59,7 @@
             <i class="material-icons right">send</i>
         </button>
     </form>
-
+</div> 
 
     {% block content %}
 
