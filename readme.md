@@ -1,1 +1,1 @@
-My app is completed and its live in https://test-ground-2021.herokuapp.com/ go check it out if interested 
+My app is completed and its live in https://test-ground-2021.herokuapp.com/ go check it out if interested, there is just a small issue while searching but i will fix it by the secound week of feb. 🎃
