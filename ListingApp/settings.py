@@ -27,9 +27,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'z_6sk+4p_mw&5dp@e$#redaoplqi#u8*+=8rwuc5v1^%$3#mnc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1:8000', 'test-ground-2021.herokuapp.com']
 
 
 # Application definition

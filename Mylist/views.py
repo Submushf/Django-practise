@@ -1,8 +1,8 @@
 import requests
 from django.shortcuts import render
 from bs4 import BeautifulSoup
-from . import models
 from requests.compat import quote_plus
+from . import models
 
 BASE_CRAIGSLIST_URL = 'https://dhaka.craigslist.org/search/?query={}'
 BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
@@ -20,7 +20,7 @@ def home(request):
 
 def new_search(request):
     search = request.POST.get('search')
-    models.search.objects.create(search=search)
+    models.Search.objects.create(search=search)
     final_url = BASE_CRAIGSLIST_URL.format(quote_plus(search))
     response = requests.get(final_url)
     data = response.text
